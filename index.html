@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <!-- <img src="imgs/tapa.jpg"> -->
+    <h1> | PORTFOLIO FOTOGRÁFICO | </h1>
+    <h2>| Juan Cruz Tagliani |</h2>
+     <div class="datos-contacto">
+    <a href="mailto:contenidowork6@gmail.com" class="datomail">
+    <div> <span>📧</span> contactowork6@gmail.com</div>
+    </a> 
+    <div class="dato"><span>🌎</span> Brasil</div>
+  </div>
+     <!-- <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav> -->
+    
+  </header>
+ <section id="inicio">
+  <div class ="contenedor-categorias">
+    <section class="categoria">
+  <!-- <section id="categorias" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;"> -->
+  <div class="albums-container">
+    <div class="album" data-album="paisajes" >
+       <img src="imgs/paisajes/psj-1.jpg" class="portada1">
+       <div class="titulo-overlay">
+        <div class="texto-overlay">
+       <h3>PAISAJES</h3> 
+       <h2>Naturaleza del Nordeste de Brasil </h2>
+       </div>
+     </div>
+   </div>
+  </div>  
+</section>
+
+ <section class="categoria">
+  <!-- <section id="categorias" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;"> -->
+  <div class="albums-container">
+    <div class="album" data-album="retratos" >
+       <img src="imgs/retratos/retrato_4.jpg" class="portada2" >
+       <div class="titulo-overlay">
+        <div class="texto-overlay">
+       <h3>RETRATOS</h3> 
+       <h2>Cada mirada, una historia </h2>
+      </div>
+     </div>
+    </div>  
+  </div>
+</section>
+ <section class="categoria">
+  <!-- <section id="categorias" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;"> -->
+  <div class="albums-container">
+    <div class="album" data-album="rutina" >
+       <img src="imgs/rutina/rutina-7.jpg" class="portada3">
+       <div class="titulo-overlay">
+        <div class="texto-overlay">
+       <h3>DIARIO VISUAL</h3> 
+       <h2> La rutina, el día a día </h2>
+      </div>
+     </div>
+    </div>  
+  </div>
+</section>
+
+<section class="categoria">
+  <!-- <section id="categorias" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;"> -->
+  <div class="albums-container">
+    <div class="album" data-album="byn" >
+       <img src="imgs/BYN/byn-7.jpg" class="portada4" >
+       <div class="titulo-overlay">
+        <div class="texto-overlay">
+       <h3>BYN</h3> 
+       <h2> Luces y contrastes </h2>
+      </div>
+     </div>
+    </div>  
+  </div>
+</section>
+
+<section class="categoria">
+  <!-- <section id="categorias" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;"> -->
+  <div class="albums-container">
+    <div class="album" data-album="arq" >
+       <img src="imgs/arq/arq-11.jpg" class="portada5" >
+       <div class="titulo-overlay">
+        <div class="texto-overlay">
+       <h3>ARQUITECTURA</h3> 
+       <h2> Una mirada mas cercana al arte de la ciudad </h2>
+      </div>
+     </div>
+    </div>  
+  </div>
+</section>
+
+<div class="modal" id="modal">
+  <button id="cerrar-modal">X</button>
+  <!-- <button onclick="window.location.href='#inicio'">↑↑INICIO↑↑</button> -->
+  <div id="galeria-album"></div>
+</div>
+ </section>
+  <footer>
+    <p>© 2025 Juan Cruz Tagliani</p>
+ 
+    <!-- <button class=boton onclick="window.location.href='#inicio'">↑↑INICIO↑↑</button> -->
+    <a href="#inicio" class="boton oculto">↑↑INICIO↑↑</a>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <section id="presentacion">: Sección especial donde estará esta parte del portfolio.
+
+<h2>: Título con tu nombre y el título del portfolio.
+
+.datos-contacto: Agrupa los datos de contacto como teléfono, correo y país.
+
+Cada .dato es una “caja” individual para cada contacto.
+
+.evento: Contiene un título destacado y un texto breve que lo acompaña.
+
+.evento-lugar: Muestra el lugar y el año como un “botón” o etiqueta decorativa -->
+
+
+
+
+  <!-- HTML, ES RESPONSABLE DE LA PARTE ESTRUCTURAL DE UNA WEB, TEXTOS, ARCHIVOS, ETC
+   
+ link rel="stylesheet" href="style.css" se usa para linkear un css al html
+    
+     se usa header para agrupar links o alguna imagen o logo de una pag, podemos crear tantas como querramos, siempre
+    y cuando no pongamos una etiq de header dentro de otra etiq de header, tampoco dentro de una etiq de footer-->
+    
+    <!--section es para definir secciones de nuestra app,
+     dentro de las secciones podemos colocar las etiquetas que nosotros querramos  -->
+    
+    <!--footer se usa para add info de contacto info del site links o copyright-->
+
+    <!--article se usa para definir e identificar contenido independiente, post de un blog, enmarcar una publicacion,-->
+
+    <!-- <a/> es para add un link href="mailto" es para enviar hacia un mail determinado -->
+
+    <!--atributos en las etiquetas sirve para interactuar mediante js o para asignar un stilo 
+     estos atributos es importates colocarlos solo una vez son id:"" 
+     para poner el mismo nombre a varios elementos se usa class="" pero lo mejor es usar nombres distintos
+     estos atributos sirven para que despues con css o js utilizando los selectores podamos seleccionar estos elementos 
+     identificar estos elementos-->
