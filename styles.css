@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*CUERPO DE PAGINA*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0 0px;
+  background-color: #101010;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+header {
+  font-family: montserrat;
+  background-color: #020202;
+  color: #f7f7f7;
+  padding: 100px 10px;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  text-align: center;
+  position: relative; /* Importante para posicionar el nav*/
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+  url("imgs/tapa.jpg"); 
+   background-size: cover;
+  background-position: center;
+  
+}
+
+
+
+h1 {
+
+font-weight: 700;
+  font-size: clamp(30px, 5vw, 60px); /* Esto hará que el tamaño cambie según 
+  el ancho de la pantalla, sin salirse del rango entre 32px y 64px.*/
+   text-shadow:  2px 4px rgba(0, 0, 0, 0.8),
+    0 8px 15px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: aparecer 1s ease-out;
+  margin-bottom: 20px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+   font-weight: 300;
+    font-size: clamp(20px, 5vw, 45px);
+    text-shadow: 8px 8px 10px rgba(0,0,0,0.8),
+    0 8px 15px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+nav {
+  font-weight: 300;
+  font-size: clamp(3px, 4vw, 6px);
+  position: absolute; /* Posiciona el nav de forma absoluta dentro del header */
+  bottom: 10px;       /* Distancia desde abajo */
+  left: 40px;         /* Distancia desde la izquierda */
+  text-shadow: 8px 8px 10px rgba(0,0,0,0.8);
+}
+
+nav a {
+
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #ffffff;
+}
+
+.datos-contacto {
+  font-family: montserrat;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin: 20px 0;
+}
+
+ .dato {
+  border: 2px dotted #eee;
+  border-radius: 30px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  text-decoration: none; /* quita el subrayado del link */
+  color: #eee;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.8) ;
+  
+} 
+
+.datomail {
+    border: 2px dotted #eee;
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  text-decoration: none; /* quita el subrayado del link */
+  color: #eee;
+    transition: background-color 0.4s ease;
+}
+
+.datomail:hover {
+    background-color: #333;
+}
+
+
+.evento p {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.evento-lugar {
+  border: 2px solid #eee;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #eee;
+}
+
+/*GALERIA PAISAJES*/
+
+/* .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 700px;
+  height: auto; 
+  object-fit: cover; /*mantiene sin deformar*/
+  /* border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+} */ 
+ /*estilos del modal */
+
+ /* .modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+
+
+/*ALBUMES  */
+
+.albums-container {
+   display: flex;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+  flex-direction: row; 
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-items: center;
+  max-width: 100%;
+  height: fit-content;
+  margin: 20px auto;
+}
+
+/* @media (max-width: 768px) {
+  .albums-container {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.album {
+
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  /* width: 100%;
+  max-width: 500px;
+   height: 600px; 
+  position: relative;
+  border-radius: 20px;
+   overflow: hidden; 
+   box-shadow: 0 0 10px #000; 
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+   margin: 30px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.album img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.portada1 {
+  object-position: center top;
+}
+
+.portada2 {
+  object-position: center bottom;
+}
+
+.portada3 {
+  object-position: center -130px;
+}
+
+.portada4 {
+  object-position: center -450px;
+}
+
+/*TEXTO DENTRO DEL ALBUM**/
+
+.titulo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+
+.titulo-overlay h3,
+.titulo-overlay h2 {
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+  text-transform: uppercase;
+}
+.texto-overlay {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-overlay h3 {
+  margin: 0;
+  color: #c0c0c0; /* texto dentro */
+  font-family: Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px;
+  letter-spacing: 1px;
+  
+}
+
+.titulo-overlay h2 {
+  margin: 0;
+  color: #b2b0b0; /* texto dentro */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  justify-content: center;
+}
+
+ 
+.modal {
+  
+  position: fixed; 
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: auto; 
+  padding: 30px;
+  z-index: 10000;
+  color: white;
+}
+
+.modal.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#cerrar-modal {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#galeria-album {
+  /* column-count: 4;
+  column-gap: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-height: 90vh;        /* Altura máxima visible */
+ /* overflow-y: auto;         Habilita scroll vertical */
+  /* scroll-behavior: smooth;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;  */
+}
+
+#galeria-album img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+}
+
+#galeria-album img:hover {
+  transform: scale(1.05);
+}
+
+.boton {
+  position: fixed;
+  border: none;
+  bottom: 10px;
+  right: 15px;
+  background-color: #2c2c2e ;
+  border-radius: 4px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 8px;
+  font-size: 25px;
+  color: #eee;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+  box-shadow: 2px 2px 10px rgba(2, 2, 2, 0.6);
+  padding: 3px 6px;
+  box-shadow: #020202;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.oculto {
+   opacity: 0;
+    pointer-events: none;
+}
+
+ /* .contenedor-categorias {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  scroll-behavior: smooth;
+} */
+
+/* .categoria {
+  flex: 0 0 600px;
+  display:flex;
+  justify-content: center;
+}  */
+
+
+
+/* Estilos generales
+body { ... }
+
+/* Header */
+/* header { ... } */
+
+/* Navegación */
+/* nav a { ... } */
+
+/* Secciones generales */
+/* section { ... } */
+
+/* Footer */
+/* footer { ... } */
+
+/* Galería de paisajes (al final) */
+/* .galeria-paisajes {
+  ...
+} */ 
+
+/*vw es una unidad de medida relativa que significa:
+
+Viewport Width → Ancho del área visible del navegador (pantalla del usuario).
+1vw equivale al 1% del ancho total de la pantalla.
+
+Si tu pantalla mide 1000px de ancho, entonces:
+
+1vw = 10px
+
+h1 {
+  font-size: 10vw;
+}
+Si tu pantalla tiene 1000px de ancho, el tamaño será:
+10% de 1000px = 100px
+Si achicas la pantalla, el texto se hará más pequeño automáticamente.
+
+✅ Comparación rápida:
+Unidad	Qué mide	Cambia según pantalla
+px	Píxeles fijos	❌ No cambia
+%	Porcentaje del contenedor padre	✅ Depende del contenedor
+vw	Porcentaje del ancho del viewport	✅ Cambia según la pantalla
+
+✅ ¿Cuándo usar vw?
+Para fuentes o elementos que deben adaptarse a distintas pantallas.
+
+Para títulos grandes que deban escalar según el ancho del navegador.
+
+✅ Consejo:
+Aunque vw es útil, hay que usarlo con cuidado, porque en pantallas muy pequeñas los textos pueden quedar muy chicos o muy grandes.
+
+Por eso es muy común usarlo con clamp():
+
+h1 {
+  font-size: clamp(24px, 5vw, 60px);
+}
+Esto significa:
+
+Mínimo 24px.
+
+Máximo 60px.
+
+Idealmente 5vw (depende del ancho de pantalla).*/
