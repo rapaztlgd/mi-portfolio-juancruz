@@ -426,6 +426,18 @@ footer {
     pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  header {
+    margin-top: 0;
+    padding-top: 1.5rem;
+  }
+
+  body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
  /* .contenedor-categorias {
   display: flex;
   gap: 40px;
